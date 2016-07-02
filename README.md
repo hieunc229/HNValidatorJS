@@ -4,7 +4,7 @@ A tiny JavaScript Validation Library
 ## Avaliable options include ##
  -------------------------------------------------------
  _min(5)_ : mininum lenght of string is 5
- _max(5)_ : maxinum length of string is 5.
+ _max(5)_ : maxinum length of string is 5
  _size(5)_ : valid size of length is 5
  _between(4,6)_: valid length of string between 4 and 6
  _required_ : field is required, must not be empty
