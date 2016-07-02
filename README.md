@@ -10,7 +10,11 @@ A tiny JavaScript Validation Library
  - _email_ : string must be an email form (a@b.c)
  - _regex:_ string must follow the regex format
     _-->regex_ : "/pattern/";
-
+## How to use ##
+Just simply include the library as below, please change src value to its actual location
+```html
+<script type="text/javascript" src="HNValidator.js"></script>
+```
 ## Example: ##
 ```javascript
     var values = [
