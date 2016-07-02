@@ -9,8 +9,7 @@ A tiny JavaScript Validation Library
  - _required_ : field is required, must not be empty
  - _email_ : string must be an email form (a@b.c)
  - _regex:_ string must follow the regex format
-    _-->regex_ : "<pattern>";
--------------------------------------------------------
+    _-->regex_ : "/pattern/";
 
 ## Example: ##
 ```javascript
