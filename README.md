@@ -9,10 +9,11 @@ A tiny JavaScript Validation Library
  - _required_   : field is required, must not be empty
  - _email_      : string must be an email form (a@b.c)
  - _regex_      : string must follow the regex format
- ..+ _regex_     : "/pattern/"
+ ..* _regex_     : "/pattern/"
  - _match_      : matching value
- ..+ _matchValue_ : value will be compare/matching
-    
+ ..* _matchValue_ : value will be compare/matching
+ - _condition_  : a custom condition (for example, a callback with true/false value)
+ ..* _condition_ : true/false statement
 ## How to use ##
 Just simply include the library as below, please change src value to its actual location
 ```html
@@ -41,6 +42,12 @@ Just simply include the library as below, please change src value to its actual 
             value: '22022',
             rules: 'regex',
             regex: '/^[0-9]{4}$/'
+        },
+        {
+            name: 'PostCode Area',
+            value: '2202',
+            rules: 'condition',
+            condition: (this.value == 2202)
         }
     ]
     

@@ -58,7 +58,7 @@ HNValidatorJS = function(values) {
                     
                 case (r == 'required'):
                     if (v.value === undefined || v.value == '') {
-                        errors.push(name + ' is required')
+                        errors.push(v.name + ' is required')
                     }
                     break;
                 case (r.indexOf("min") > -1): 
@@ -102,6 +102,11 @@ HNValidatorJS = function(values) {
                 case (r == 'match'):
                     if (v.value != v.matchValue) {
                         errors.push(v.name + ' does not match')
+                    }
+                    break;
+                case (r == 'condition'):
+                    if (v.condition == false) {
+                        errors.push(v.name + ' is invalid')
                     }
                     break;
             }
