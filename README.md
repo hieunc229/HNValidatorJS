@@ -14,6 +14,7 @@ A tiny JavaScript Validation Library
  ..* _matchValue_ : value will be compare/matching
  - _condition_  : a custom condition (for example, a callback with true/false value)
  ..* _condition_ : true/false statement
+
 ## How to use ##
 Just simply include the library as below, please change src value to its actual location
 ```html
