@@ -99,6 +99,11 @@ HNValidatorJS = function(values) {
                         errors.push(v.name + ' must follow regex pattern')
                     }
                     break;
+                case (r == 'match'):
+                    if (v.value != v.matchValue) {
+                        errors.push(v.name + ' does not match')
+                    }
+                    break;
             }
         }
     }
